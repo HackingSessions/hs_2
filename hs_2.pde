@@ -13,6 +13,11 @@ void restore() {
   mod.copy(photo,0,0,photo.width,photo.height,0,0,photo.width,photo.height);
 }
 
+void mouseDragged(){
+  println(mouseX+" "+mouseY);
+  mod.set(mouseX,mouseY,color(255,0,0));
+
+}
 /* Makes everything blue */
 void blueify(){
   int x,y;
